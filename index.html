@@ -1,10 +1,172 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-BR" class="dark">
 <head>
-  <meta charset="UTF-8">
-  <title>Gabriel Souza</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gabriel Souza — Software Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+  </script>
 </head>
-<body>
-  <h1>gabrielsouza.is-a.dev</h1>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors bg-[url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\'><circle cx=\'20\' cy=\'20\' r=\'2\' fill=\'%23d1d5db\'/></svg>')] dark:bg-[url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\'><circle cx=\'20\' cy=\'20\' r=\'2\' fill=\'%236b7280\'/></svg>')]">
+
+  <div class="max-w-5xl mx-auto p-4 space-y-6">
+
+    <section class="relative flex flex-col md:flex-row gap-6 items-center md:items-start bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6">
+      <div class="absolute -top-6 left-6 opacity-10 pointer-events-none">
+        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden sm:block">
+          <rect x="0" y="0" width="120" height="120" rx="16" fill="currentColor" class="text-sky-100 dark:text-sky-700" />
+        </svg>
+      </div>
+
+      <img src="https://avatars.githubusercontent.com/u/86239299?v=4" alt="Gabriel Souza" class="w-36 h-36 md:w-40 md:h-40 rounded-xl shadow-lg object-cover transform translate-y-2 md:translate-y-0" />
+
+      <div class="flex-1 space-y-2 pl-0 md:pl-4">
+        <h1 class="text-3xl font-bold">Gabriel Souza</h1>
+        <p class="text-gray-600 dark:text-gray-300 text-lg">Software Developer | Automations & Cloud</p>
+        <p class="text-gray-500 dark:text-gray-400">Maringá, Paraná, Brasil</p>
+
+        <div class="mt-3 flex gap-3">
+          <button id="toggleTheme" aria-pressed="false" class="px-4 py-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">Alternar tema</button>
+          <a href="#contact" class="px-4 py-2 rounded-lg bg-sky-600 text-white hover:bg-sky-700">Entrar em contato</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-white dark:bg-gray-800 shadow rounded-xl p-6">
+      <h2 class="text-xl font-semibold mb-3">Contato</h2>
+
+      <div id="contact-locked" class="space-y-3">
+        <p class="text-gray-600 dark:text-gray-400">Para visualizar as informações de contato, responda ao desafio:</p>
+        <p class="font-medium">Quanto é <span id="n1">?</span> + <span id="n2">?</span>?</p>
+        <div class="flex items-center gap-2">
+          <input id="challenge-input" type="number" aria-label="resultado da soma" class="px-3 py-2 rounded-lg bg-gray-200 dark:bg-gray-700 w-32" />
+          <button id="challenge-btn" class="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700">Verificar</button>
+        </div>
+        <p id="challenge-error" class="text-red-500 hidden">Resposta incorreta. Tente novamente.</p>
+      </div>
+
+      <div id="contact-data" class="hidden space-y-1 text-gray-700 dark:text-gray-300 mt-4">
+        <ul class="space-y-1 pb-3">
+          <li>📱 <span class="not-prose">(044) 9 9158-0952</span></li>
+          <li>✉️ <a class="text-blue-500" href="mailto:gsdesenvolvedor@hotmail.com">gsdesenvolvedor@hotmail.com</a></li>
+          <li>🔗 <a class="text-blue-400" href="https://www.linkedin.com/in/gsdesenvolvedor" target="_blank" rel="noopener">linkedin.com/in/gsdesenvolvedor</a></li>
+          <li>🔗 <a class="text-blue-400" href="https://linktr.ee/gsdesenvolvedor" target="_blank" rel="noopener">linktr.ee/gsdesenvolvedor</a></li>
+        </ul>
+
+        <button id="print-cv" onclick="window.print()" class="mt-4 px-4 py-2 rounded-lg bg-green-600 text-white hover:bg-green-700">Imprimir currículo</button>
+      </div>
+    </section>
+
+    <section class="bg-white dark:bg-gray-800 shadow rounded-xl p-6">
+      <h2 class="text-xl font-semibold mb-3">Resumo profissional</h2>
+      <p class="leading-relaxed text-gray-700 dark:text-gray-300">
+        Atuo em todas as etapas do desenvolvimento de software, desde o planejamento até a codificação, suporte, manutenção e implantação. Tenho experiência em integrações com APIs RESTful e automação de fluxos de trabalho. Trabalho principalmente com Node.js (AdonisJS, Express), bancos relacionais e AWS. Já atuei também com Go, PHP, Python e Java.
+      </p>
+    </section>
+
+    <section class="bg-white dark:bg-gray-800 shadow rounded-xl p-6">
+      <h2 class="text-xl font-semibold mb-3">Principais competências</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Amazon Web Services</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Bancos de Dados</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">NodeJS</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">APIs RESTful</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">RPA / Automations</span>
+        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">DevOps</span>
+      </div>
+    </section>
+
+    <section class="bg-white dark:bg-gray-800 shadow rounded-xl p-6 space-y-6">
+      <h2 class="text-xl font-semibold">Experiência</h2>
+
+      <div>
+        <h3 class="font-semibold text-lg">Grupo Rivesa — Desenvolvedor de Sistemas</h3>
+        <p class="text-gray-500 dark:text-gray-400 text-sm">jan 2020 – Presente · Maringá</p>
+        <p class="mt-2 leading-relaxed text-gray-700 dark:text-gray-300">
+          Desenvolvimento e manutenção full stack, modelagem de banco de dados, regras de negócio, documentação técnica, automações RPA, SQL, integrações REST e administração de serviços em nuvem.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg">Assistente de TI — Grupo Rivesa</h3>
+        <p class="text-gray-500 dark:text-gray-400 text-sm">dez 2018 – jan 2020</p>
+        <p class="mt-2 leading-relaxed text-gray-700 dark:text-gray-300">
+          Desenvolvimento em PHP, MySQL, implantação de sistemas, relatórios CIGAM e suporte técnico.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg">Estagiário de TI</h3>
+        <p class="text-gray-500 dark:text-gray-400 text-sm">mai 2018 – dez 2018</p>
+        <p class="mt-2 leading-relaxed text-gray-700 dark:text-gray-300">
+          Suporte técnico e auxílio no desenvolvimento e manutenção de aplicações internas.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-white dark:bg-gray-800 shadow rounded-xl p-6">
+      <h2 class="text-xl font-semibold mb-3">Formação acadêmica</h2>
+      <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+        <li><strong>UNICV</strong> — CST em ADS · (2024–2026)</li>
+        <li><strong>Colégio Estadual Antônio Francisco Lisboa</strong> — Técnico em Desenvolvimento de Sistemas · (2015–2018)</li>
+      </ul>
+    </section>
+
+    <section class="bg-white dark:bg-gray-800 shadow rounded-xl p-6">
+      <h2 class="text-xl font-semibold mb-3">Certificações & Prêmios</h2>
+      <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-1">
+        <li>Embaixador da Inovação (2024)</li>
+        <li>Embaixador da Inovação (2023)</li>
+        <li>Professional Scrum Master</li>
+        <li>Formação Tech Lead (37h)</li>
+        <li>Prêmio Internacional de Vivência Estudantil — FICiências 2018</li>
+        <li>Melhores do Ano em Inovação</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.getElementById('toggleTheme');
+      toggle?.addEventListener('click', () => {
+        const isDark = document.documentElement.classList.toggle('dark');
+        toggle.setAttribute('aria-pressed', String(isDark));
+      });
+
+      const n1 = Math.floor(Math.random() * 9) + 1;
+      const n2 = Math.floor(Math.random() * 9) + 1;
+      const n1El = document.getElementById('n1');
+      const n2El = document.getElementById('n2');
+      const input = document.getElementById('challenge-input');
+      const btn = document.getElementById('challenge-btn');
+      const err = document.getElementById('challenge-error');
+      const locked = document.getElementById('contact-locked');
+      const data = document.getElementById('contact-data');
+
+      if (n1El) n1El.textContent = String(n1);
+      if (n2El) n2El.textContent = String(n2);
+
+      btn?.addEventListener('click', () => {
+        const val = Number(input?.value);
+        if (Number.isNaN(val)) {
+          err.textContent = 'Por favor insira um número.';
+          err.classList.remove('hidden');
+          return;
+        }
+        if (val === n1 + n2) {
+          locked?.classList.add('hidden');
+          data?.classList.remove('hidden');
+          err.classList.add('hidden');
+        } else {
+          err.textContent = 'Resposta incorreta. Tente novamente.';
+          err.classList.remove('hidden');
+        }
+      });
+
+    });
+  </script>
 </body>
 </html>
