@@ -1,172 +1,363 @@
-<!doctype html>
-<html lang="pt-BR" class="dark">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Gabriel Souza — Software Developer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { darkMode: 'class' };
-  </script>
+    <title>Gabriel Souza Is A Dev.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700,800,900|Space+Grotesk:400,500,600,700,800,900&amp;subset=latin">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://avatars.githubusercontent.com/u/86239299?v=4">
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors bg-[url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\'><circle cx=\'20\' cy=\'20\' r=\'2\' fill=\'%23d1d5db\'/></svg>')] dark:bg-[url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\'><circle cx=\'20\' cy=\'20\' r=\'2\' fill=\'%236b7280\'/></svg>')]">
-
-  <div class="max-w-5xl mx-auto p-4 space-y-6">
-
-    <section class="relative flex flex-col md:flex-row gap-6 items-center md:items-start bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6">
-      <div class="absolute -top-6 left-6 opacity-10 pointer-events-none">
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden sm:block">
-          <rect x="0" y="0" width="120" height="120" rx="16" fill="currentColor" class="text-sky-100 dark:text-sky-700" />
-        </svg>
-      </div>
-
-      <img src="https://avatars.githubusercontent.com/u/86239299?v=4" alt="Gabriel Souza" class="w-36 h-36 md:w-40 md:h-40 rounded-xl shadow-lg object-cover transform translate-y-2 md:translate-y-0" />
-
-      <div class="flex-1 space-y-2 pl-0 md:pl-4">
-        <h1 class="text-3xl font-bold">Gabriel Souza</h1>
-        <p class="text-gray-600 dark:text-gray-300 text-lg">Software Developer | Automations & Cloud</p>
-        <p class="text-gray-500 dark:text-gray-400">Maringá, Paraná, Brasil</p>
-
-        <div class="mt-3 flex gap-3">
-          <button id="toggleTheme" aria-pressed="false" class="px-4 py-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition">Alternar tema</button>
-          <a href="#contact" class="px-4 py-2 rounded-lg bg-sky-600 text-white hover:bg-sky-700">Entrar em contato</a>
+<body class="antialiased bg-body text-body font-body">
+    <div class="">
+                
+      <nav class="bg-zinc-950 border-b border-zinc-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-cyan-500 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-zinc-950" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <span class="font-heading text-white text-lg font-semibold">Gabriel Souza Is A Dev.</span>
+          </div>
+          <div class="hidden md:flex items-center gap-8">
+            <a href="#sobre" class="text-zinc-400 hover:text-emerald-400 transition-colors text-sm">Sobre</a>
+            <a href="#experiencia" class="text-zinc-400 hover:text-emerald-400 transition-colors text-sm">Experiência</a>
+            <a href="#habilidades" class="text-zinc-400 hover:text-emerald-400 transition-colors text-sm">Habilidades</a>
+            <a href="#contato" class="text-zinc-400 hover:text-emerald-400 transition-colors text-sm">Contato</a>
+          </div>
+          <a href="#contato" class="bg-emerald-500 hover:bg-emerald-400 text-zinc-950 px-4 py-2 rounded-lg text-sm font-medium transition-colors">Disponível</a>
         </div>
-      </div>
-    </section>
-
-    <section id="contact" class="bg-white dark:bg-gray-800 shadow rounded-xl p-6">
-      <h2 class="text-xl font-semibold mb-3">Contato</h2>
-
-      <div id="contact-locked" class="space-y-3">
-        <p class="text-gray-600 dark:text-gray-400">Para visualizar as informações de contato, responda ao desafio:</p>
-        <p class="font-medium">Quanto é <span id="n1">?</span> + <span id="n2">?</span>?</p>
-        <div class="flex items-center gap-2">
-          <input id="challenge-input" type="number" aria-label="resultado da soma" class="px-3 py-2 rounded-lg bg-gray-200 dark:bg-gray-700 w-32" />
-          <button id="challenge-btn" class="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700">Verificar</button>
+      </nav>
+                
+      <section class="bg-zinc-950 min-h-screen relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-900/20 via-transparent to-transparent"></div>
+        <div class="absolute top-20 right-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 left-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl"></div>
+        <div class="max-w-6xl mx-auto px-6 py-24 relative z-10">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+              <div class="inline-flex items-center gap-2 bg-zinc-900 border border-zinc-800 rounded-full px-4 py-2">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                <span class="text-zinc-400 text-sm">Disponível para novos projetos</span>
+              </div>
+              <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl text-white leading-tight">
+                <span>Gabriel</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Souza</span>
+              </h1>
+              <p class="text-xl md:text-2xl text-zinc-400 font-light">Software Developer | <span class="text-emerald-400">Automations</span> &amp; <span class="text-cyan-400">Cloud</span></p>
+              <p class="text-zinc-500 text-lg leading-relaxed max-w-xl">Acredito que bom código é aquele que resolve problemas reais e gera valor de negócio. Foco em escalabilidade, performance e manutenibilidade.</p>
+              <div class="flex flex-wrap gap-4">
+                <a href="#contato" class="group bg-gradient-to-r from-emerald-500 to-cyan-500 text-zinc-950 px-8 py-4 rounded-xl font-semibold flex items-center gap-2 hover:shadow-lg hover:shadow-emerald-500/25 transition-all">Entrar em Contato<svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg></a>
+                <a href="https://linkedin.com/in/gsdesenvolvedor" target="_blank" class="bg-zinc-900 border border-zinc-800 text-white px-8 py-4 rounded-xl font-semibold hover:border-emerald-500/50 transition-colors flex items-center gap-2"><svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>LinkedIn</a>
+              </div>
+              <div class="flex items-center gap-8 pt-4">
+                <div class="text-center">
+                  <span class="block text-3xl font-heading text-white">7+</span>
+                  <span class="text-zinc-500 text-sm">Anos de Experiência</span>
+                </div>
+                <div class="w-px h-12 bg-zinc-800"></div>
+                <div class="text-center">
+                  <span class="block text-3xl font-heading text-white">3</span>
+                  <span class="text-zinc-500 text-sm">Linguagens</span>
+                </div>
+                <div class="w-px h-12 bg-zinc-800"></div>
+                <div class="text-center">
+                  <span class="block text-3xl font-heading text-white">PSM</span>
+                  <span class="text-zinc-500 text-sm">Certificado</span>
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 shadow-2xl">
+                <div class="flex items-center gap-2 mb-4">
+                  <span class="w-3 h-3 bg-red-500 rounded-full"></span>
+                  <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
+                  <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                  <span class="ml-4 text-zinc-500 text-sm">gabriel-souza.ts</span>
+                </div>
+                <pre class="text-sm font-mono">
+                  <code><span class="text-purple-400">const</span><span class="text-cyan-400">developer</span> = {
+        <span class="text-emerald-400">name</span>: <span class="text-amber-400">"Gabriel Souza"</span>,
+        <span class="text-emerald-400">location</span>: <span class="text-amber-400">"Maringá, PR"</span>,
+        <span class="text-emerald-400">stack</span>: [
+          <span class="text-amber-400">"Node.js"</span>,
+          <span class="text-amber-400">"TypeScript"</span>,
+          <span class="text-amber-400">"PHP"</span>,
+          <span class="text-amber-400">"Java"</span>
+        ],
+        <span class="text-emerald-400">databases</span>: [
+          <span class="text-amber-400">"MySQL"</span>,
+          <span class="text-amber-400">"PostgreSQL"</span>,
+          <span class="text-amber-400">"SQL Server"</span>
+        ],
+        <span class="text-emerald-400">passion</span>: <span class="text-amber-400">"Automação"</span>
+      };</code>
+                </pre>
+              </div>
+              <div class="absolute -bottom-4 -right-4 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-xl p-4 shadow-lg">
+                <svg class="w-8 h-8 text-zinc-950" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
-        <p id="challenge-error" class="text-red-500 hidden">Resposta incorreta. Tente novamente.</p>
-      </div>
-
-      <div id="contact-data" class="hidden space-y-1 text-gray-700 dark:text-gray-300 mt-4">
-        <ul class="space-y-1 pb-3">
-          <li>📱 <span class="not-prose">(044) 9 9158-0952</span></li>
-          <li>✉️ <a class="text-blue-500" href="mailto:gsdesenvolvedor@hotmail.com">gsdesenvolvedor@hotmail.com</a></li>
-          <li>🔗 <a class="text-blue-400" href="https://www.linkedin.com/in/gsdesenvolvedor" target="_blank" rel="noopener">linkedin.com/in/gsdesenvolvedor</a></li>
-          <li>🔗 <a class="text-blue-400" href="https://linktr.ee/gsdesenvolvedor" target="_blank" rel="noopener">linktr.ee/gsdesenvolvedor</a></li>
-        </ul>
-
-        <button id="print-cv" onclick="window.print()" class="mt-4 px-4 py-2 rounded-lg bg-green-600 text-white hover:bg-green-700">Imprimir currículo</button>
-      </div>
-    </section>
-
-    <section class="bg-white dark:bg-gray-800 shadow rounded-xl p-6">
-      <h2 class="text-xl font-semibold mb-3">Resumo profissional</h2>
-      <p class="leading-relaxed text-gray-700 dark:text-gray-300">
-        Atuo em todas as etapas do desenvolvimento de software, desde o planejamento até a codificação, suporte, manutenção e implantação. Tenho experiência em integrações com APIs RESTful e automação de fluxos de trabalho. Trabalho principalmente com Node.js (AdonisJS, Express), bancos relacionais e AWS. Já atuei também com Go, PHP, Python e Java.
-      </p>
-    </section>
-
-    <section class="bg-white dark:bg-gray-800 shadow rounded-xl p-6">
-      <h2 class="text-xl font-semibold mb-3">Principais competências</h2>
-      <div class="flex flex-wrap gap-2">
-        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Amazon Web Services</span>
-        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">Bancos de Dados</span>
-        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">NodeJS</span>
-        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">APIs RESTful</span>
-        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">RPA / Automations</span>
-        <span class="px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm">DevOps</span>
-      </div>
-    </section>
-
-    <section class="bg-white dark:bg-gray-800 shadow rounded-xl p-6 space-y-6">
-      <h2 class="text-xl font-semibold">Experiência</h2>
-
-      <div>
-        <h3 class="font-semibold text-lg">Grupo Rivesa — Desenvolvedor de Sistemas</h3>
-        <p class="text-gray-500 dark:text-gray-400 text-sm">jan 2020 – Presente · Maringá</p>
-        <p class="mt-2 leading-relaxed text-gray-700 dark:text-gray-300">
-          Desenvolvimento e manutenção full stack, modelagem de banco de dados, regras de negócio, documentação técnica, automações RPA, SQL, integrações REST e administração de serviços em nuvem.
-        </p>
-      </div>
-
-      <div>
-        <h3 class="font-semibold text-lg">Assistente de TI — Grupo Rivesa</h3>
-        <p class="text-gray-500 dark:text-gray-400 text-sm">dez 2018 – jan 2020</p>
-        <p class="mt-2 leading-relaxed text-gray-700 dark:text-gray-300">
-          Desenvolvimento em PHP, MySQL, implantação de sistemas, relatórios CIGAM e suporte técnico.
-        </p>
-      </div>
-
-      <div>
-        <h3 class="font-semibold text-lg">Estagiário de TI</h3>
-        <p class="text-gray-500 dark:text-gray-400 text-sm">mai 2018 – dez 2018</p>
-        <p class="mt-2 leading-relaxed text-gray-700 dark:text-gray-300">
-          Suporte técnico e auxílio no desenvolvimento e manutenção de aplicações internas.
-        </p>
-      </div>
-    </section>
-
-    <section class="bg-white dark:bg-gray-800 shadow rounded-xl p-6">
-      <h2 class="text-xl font-semibold mb-3">Formação acadêmica</h2>
-      <ul class="space-y-3 text-gray-700 dark:text-gray-300">
-        <li><strong>UNICV</strong> — CST em ADS · (2024–2026)</li>
-        <li><strong>Colégio Estadual Antônio Francisco Lisboa</strong> — Técnico em Desenvolvimento de Sistemas · (2015–2018)</li>
-      </ul>
-    </section>
-
-    <section class="bg-white dark:bg-gray-800 shadow rounded-xl p-6">
-      <h2 class="text-xl font-semibold mb-3">Certificações & Prêmios</h2>
-      <ul class="list-disc pl-6 text-gray-700 dark:text-gray-300 space-y-1">
-        <li>Embaixador da Inovação (2024)</li>
-        <li>Embaixador da Inovação (2023)</li>
-        <li>Professional Scrum Master</li>
-        <li>Formação Tech Lead (37h)</li>
-        <li>Prêmio Internacional de Vivência Estudantil — FICiências 2018</li>
-        <li>Melhores do Ano em Inovação</li>
-      </ul>
-    </section>
-
-  </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggle = document.getElementById('toggleTheme');
-      toggle?.addEventListener('click', () => {
-        const isDark = document.documentElement.classList.toggle('dark');
-        toggle.setAttribute('aria-pressed', String(isDark));
-      });
-
-      const n1 = Math.floor(Math.random() * 9) + 1;
-      const n2 = Math.floor(Math.random() * 9) + 1;
-      const n1El = document.getElementById('n1');
-      const n2El = document.getElementById('n2');
-      const input = document.getElementById('challenge-input');
-      const btn = document.getElementById('challenge-btn');
-      const err = document.getElementById('challenge-error');
-      const locked = document.getElementById('contact-locked');
-      const data = document.getElementById('contact-data');
-
-      if (n1El) n1El.textContent = String(n1);
-      if (n2El) n2El.textContent = String(n2);
-
-      btn?.addEventListener('click', () => {
-        const val = Number(input?.value);
-        if (Number.isNaN(val)) {
-          err.textContent = 'Por favor insira um número.';
-          err.classList.remove('hidden');
-          return;
-        }
-        if (val === n1 + n2) {
-          locked?.classList.add('hidden');
-          data?.classList.remove('hidden');
-          err.classList.add('hidden');
-        } else {
-          err.textContent = 'Resposta incorreta. Tente novamente.';
-          err.classList.remove('hidden');
-        }
-      });
-
-    });
-  </script>
+      </section>
+                
+      <section id="experiencia" class="bg-zinc-950 py-24 border-t border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <span class="text-emerald-400 text-sm font-medium tracking-widest uppercase">Trajetória Profissional</span>
+            <h2 class="font-heading text-4xl md:text-5xl text-white mt-4">Experiência</h2>
+          </div>
+          <div class="relative">
+            <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-emerald-500 via-cyan-500 to-transparent"></div>
+            <div class="space-y-12">
+              <div class="relative flex flex-col md:flex-row gap-8 md:gap-16">
+                <div class="md:w-1/2 md:text-right md:pr-16">
+                  <span class="text-emerald-400 text-sm font-medium">Jan 2020 - Presente</span>
+                  <p class="text-zinc-500 text-sm mt-1">6+ anos</p>
+                </div>
+                <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-emerald-500 rounded-full border-4 border-zinc-950 transform -translate-x-1/2 mt-1"></div>
+                <div class="md:w-1/2 md:pl-16 pl-16">
+                  <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-emerald-500/30 transition-colors">
+                    <h3 class="font-heading text-xl text-white">Desenvolvedor de Sistemas</h3>
+                    <p class="text-emerald-400 font-medium mt-1">Grupo Rivesa</p>
+                    <p class="text-zinc-500 text-sm mt-1">Maringá, Paraná</p>
+                    <p class="text-zinc-400 mt-4 text-sm leading-relaxed">Desenvolvimento e manutenção full stack com forte foco em modelagem de banco de dados e regras de negócio. Documentações técnicas, automações de fluxos de trabalho e soluções RPA. Integração com APIs RESTful e administração de serviços em nuvem.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                      <span class="bg-zinc-800 text-zinc-300 px-3 py-1 rounded-full text-xs">Full Stack</span>
+                      <span class="bg-zinc-800 text-zinc-300 px-3 py-1 rounded-full text-xs">RPA</span>
+                      <span class="bg-zinc-800 text-zinc-300 px-3 py-1 rounded-full text-xs">Cloud</span>
+                      <span class="bg-zinc-800 text-zinc-300 px-3 py-1 rounded-full text-xs">APIs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col md:flex-row gap-8 md:gap-16">
+                <div class="md:w-1/2 md:text-right md:pr-16">
+                  <span class="text-cyan-400 text-sm font-medium">Dez 2018 - Jan 2020</span>
+                  <p class="text-zinc-500 text-sm mt-1">1 ano 2 meses</p>
+                </div>
+                <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-cyan-500 rounded-full border-4 border-zinc-950 transform -translate-x-1/2 mt-1"></div>
+                <div class="md:w-1/2 md:pl-16 pl-16">
+                  <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-cyan-500/30 transition-colors">
+                    <h3 class="font-heading text-xl text-white">Assistente de TI</h3>
+                    <p class="text-cyan-400 font-medium mt-1">Grupo Rivesa</p>
+                    <p class="text-zinc-400 mt-4 text-sm leading-relaxed">Desenvolvimento e manutenção de sistemas em PHP, modelagem de dados MySQL, implantação de sistemas e suporte técnico a usuários internos.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                      <span class="bg-zinc-800 text-zinc-300 px-3 py-1 rounded-full text-xs">PHP</span>
+                      <span class="bg-zinc-800 text-zinc-300 px-3 py-1 rounded-full text-xs">MySQL</span>
+                      <span class="bg-zinc-800 text-zinc-300 px-3 py-1 rounded-full text-xs">ERP CIGAM</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative flex flex-col md:flex-row gap-8 md:gap-16">
+                <div class="md:w-1/2 md:text-right md:pr-16">
+                  <span class="text-purple-400 text-sm font-medium">Mai 2018 - Dez 2018</span>
+                  <p class="text-zinc-500 text-sm mt-1">8 meses</p>
+                </div>
+                <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-zinc-950 transform -translate-x-1/2 mt-1"></div>
+                <div class="md:w-1/2 md:pl-16 pl-16">
+                  <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-purple-500/30 transition-colors">
+                    <h3 class="font-heading text-xl text-white">Estagiário de TI</h3>
+                    <p class="text-purple-400 font-medium mt-1">Grupo Rivesa</p>
+                    <p class="text-zinc-400 mt-4 text-sm leading-relaxed">Início da trajetória profissional com aprendizado prático em desenvolvimento de sistemas e infraestrutura de TI.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <section id="habilidades" class="bg-zinc-950 py-24 border-t border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <span class="text-emerald-400 text-sm font-medium tracking-widest uppercase">Stack Tecnológico</span>
+            <h2 class="font-heading text-4xl md:text-5xl text-white mt-4">Competências</h2>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gradient-to-br from-zinc-900 to-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-emerald-500/30 transition-all group">
+              <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-500/20 transition-colors">
+                <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+              </div>
+              <h3 class="font-heading text-lg text-white mb-2">Linguagens</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-zinc-800/50 text-emerald-400 px-3 py-1.5 rounded-lg text-sm">Node.js</span>
+                <span class="bg-zinc-800/50 text-emerald-400 px-3 py-1.5 rounded-lg text-sm">TypeScript</span>
+                <span class="bg-zinc-800/50 text-emerald-400 px-3 py-1.5 rounded-lg text-sm">PHP</span>
+                <span class="bg-zinc-800/50 text-emerald-400 px-3 py-1.5 rounded-lg text-sm">Java</span>
+              </div>
+            </div>
+            <div class="bg-gradient-to-br from-zinc-900 to-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-cyan-500/30 transition-all group">
+              <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-cyan-500/20 transition-colors">
+                <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+                </svg>
+              </div>
+              <h3 class="font-heading text-lg text-white mb-2">Bancos de Dados</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-zinc-800/50 text-cyan-400 px-3 py-1.5 rounded-lg text-sm">MySQL</span>
+                <span class="bg-zinc-800/50 text-cyan-400 px-3 py-1.5 rounded-lg text-sm">PostgreSQL</span>
+                <span class="bg-zinc-800/50 text-cyan-400 px-3 py-1.5 rounded-lg text-sm">SQL Server</span>
+              </div>
+            </div>
+            <div class="bg-gradient-to-br from-zinc-900 to-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-purple-500/30 transition-all group">
+              <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-purple-500/20 transition-colors">
+                <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                </svg>
+              </div>
+              <h3 class="font-heading text-lg text-white mb-2">Cloud &amp; DevOps</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-zinc-800/50 text-purple-400 px-3 py-1.5 rounded-lg text-sm">Cloud Services</span>
+                <span class="bg-zinc-800/50 text-purple-400 px-3 py-1.5 rounded-lg text-sm">APIs RESTful</span>
+                <span class="bg-zinc-800/50 text-purple-400 px-3 py-1.5 rounded-lg text-sm">RPA</span>
+              </div>
+            </div>
+            <div class="bg-gradient-to-br from-zinc-900 to-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-amber-500/30 transition-all group">
+              <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-amber-500/20 transition-colors">
+                <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                </svg>
+              </div>
+              <h3 class="font-heading text-lg text-white mb-2">Certificações</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-zinc-800/50 text-amber-400 px-3 py-1.5 rounded-lg text-sm">Scrum Master (2023)</span>
+                <span class="bg-zinc-800/50 text-amber-400 px-3 py-1.5 rounded-lg text-sm">Tech Lead (2025)</span>
+              </div>
+            </div>
+            <div class="bg-gradient-to-br from-zinc-900 to-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-rose-500/30 transition-all group">
+              <div class="w-12 h-12 bg-rose-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-rose-500/20 transition-colors">
+                <svg class="w-6 h-6 text-rose-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                </svg>
+              </div>
+              <h3 class="font-heading text-lg text-white mb-2">Reconhecimentos</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-zinc-800/50 text-rose-400 px-3 py-1.5 rounded-lg text-sm">Embaixador Inovação 3x</span>
+                <span class="bg-zinc-800/50 text-rose-400 px-3 py-1.5 rounded-lg text-sm">FICiencias 2018</span>
+              </div>
+            </div>
+            <div class="bg-gradient-to-br from-zinc-900 to-zinc-900/50 border border-zinc-800 rounded-2xl p-6 hover:border-sky-500/30 transition-all group">
+              <div class="w-12 h-12 bg-sky-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-sky-500/20 transition-colors">
+                <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                </svg>
+              </div>
+              <h3 class="font-heading text-lg text-white mb-2">Idiomas</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-zinc-800/50 text-sky-400 px-3 py-1.5 rounded-lg text-sm">Português Nativo</span>
+                <span class="bg-zinc-800/50 text-sky-400 px-3 py-1.5 rounded-lg text-sm">Inglês Fluente</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <section id="contato" class="bg-zinc-950 py-24 border-t border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="bg-gradient-to-br from-zinc-900 via-zinc-900 to-emerald-950/30 border border-zinc-800 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl"></div>
+            <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <span class="text-emerald-400 text-sm font-medium tracking-widest uppercase">Vamos Conversar</span>
+                <h2 class="font-heading text-4xl md:text-5xl text-white mt-4">Entre em Contato</h2>
+                <p class="text-zinc-400 mt-4 text-lg">Estou disponível para novos projetos e oportunidades. Vamos construir algo incrível juntos!</p>
+                <div class="mt-8 space-y-4">
+                  <a href="tel:+5544991580952" class="flex items-center gap-4 text-zinc-300 hover:text-emerald-400 transition-colors group">
+                    <span class="w-12 h-12 bg-zinc-800 rounded-xl flex items-center justify-center group-hover:bg-emerald-500/10 transition-colors">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                      </svg>
+                    </span>
+                    <span>(044) 9 9158-0952</span>
+                  </a>
+                  <a href="mailto:gsdesenvolvedor@hotmail.com" class="flex items-center gap-4 text-zinc-300 hover:text-emerald-400 transition-colors group">
+                    <span class="w-12 h-12 bg-zinc-800 rounded-xl flex items-center justify-center group-hover:bg-emerald-500/10 transition-colors">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                      </svg>
+                    </span>
+                    <span>gsdesenvolvedor@hotmail.com</span>
+                  </a>
+                  <a href="https://linkedin.com/in/gsdesenvolvedor" target="_blank" class="flex items-center gap-4 text-zinc-300 hover:text-emerald-400 transition-colors group">
+                    <span class="w-12 h-12 bg-zinc-800 rounded-xl flex items-center justify-center group-hover:bg-emerald-500/10 transition-colors">
+                      <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                      </svg>
+                    </span>
+                    <span>linkedin.com/in/gsdesenvolvedor</span>
+                  </a>
+                  <a href="https://linktr.ee/gsdesenvolvedor" target="_blank" class="flex items-center gap-4 text-zinc-300 hover:text-emerald-400 transition-colors group">
+                    <span class="w-12 h-12 bg-zinc-800 rounded-xl flex items-center justify-center group-hover:bg-emerald-500/10 transition-colors">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
+                      </svg>
+                    </span>
+                    <span>linktr.ee/gsdesenvolvedor</span>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-zinc-800/30 border border-zinc-700/50 rounded-2xl p-6">
+                <div class="text-center">
+                  <div class="w-20 h-20 bg-gradient-to-br from-emerald-400 to-cyan-500 rounded-2xl mx-auto flex items-center justify-center mb-4">
+                    <span class="font-heading text-3xl text-zinc-950 rounded-xl">
+                      <img src="https://avatars.githubusercontent.com/u/86239299?v=4" alt="Profile Pic" class="font-heading text-3xl text-zinc-950 rounded-xl" />
+                    </span>
+                  </div>
+                  <h3 class="font-heading text-xl text-white">Gabriel Souza</h3>
+                  <p class="text-emerald-400 text-sm mt-1">Software Developer</p>
+                  <p class="text-zinc-500 text-sm mt-1">Maringá, Paraná</p>
+                  <div class="mt-6 pt-6 border-t border-zinc-700/50">
+                    <p class="text-zinc-400 text-sm">Formação</p>
+                    <p class="text-white text-sm mt-2">Análise e Desenvolvimento de Sistemas</p>
+                    <p class="text-zinc-500 text-xs">UNICV • 2024 - 2026</p>
+                    <p class="text-white text-sm mt-3">Técnico em Tecnologia da Informação</p>
+                    <p class="text-zinc-500 text-xs">CEAFL • 2015 - 2018</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <footer class="bg-zinc-950 border-t border-zinc-900 py-8">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 bg-gradient-to-br from-emerald-400 to-cyan-500 rounded-lg flex items-center justify-center">
+                <svg class="w-4 h-4 text-zinc-950" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <span class="text-zinc-400 text-sm">© 2026 Gabriel Souza. Todos os direitos reservados.</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <a href="https://linkedin.com/in/gsdesenvolvedor" target="_blank" class="text-zinc-500 hover:text-emerald-400 transition-colors">
+                <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                </svg>
+              </a>
+              <a href="mailto:gsdesenvolvedor@hotmail.com" class="text-zinc-500 hover:text-emerald-400 transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/global-17146.js?v=1770740262"></script>
 </body>
 </html>
+
